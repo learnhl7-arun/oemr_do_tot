@@ -1,0 +1,7 @@
+# About this Project
+This project is to Train the Trainers on OpenEMR. OpenEMR is an open source Electronic Medical Record. 
+
+At the end of this course the participants will be able to
+- Deploy OpenEMR on a Digital Ocean Droplet. 
+- Configure and Operate OpenEMR
+- Access OpenEMRs database through a GUI Tool
