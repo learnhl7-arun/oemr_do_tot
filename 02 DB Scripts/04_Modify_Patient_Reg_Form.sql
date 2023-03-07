@@ -1,15 +1,19 @@
 /* == 1. Delete sections not required == */ 
 -- Choices
-DELETE FROM layout_options where form_id = 'DEM' AND group_id = 3; 
-DELETE FROM layout_group_properties where grp_form_id = 'DEM' AND grp_group_id = 3;
+-- DELETE FROM layout_options where form_id = 'DEM' AND group_id = 3; 
+-- DELETE FROM layout_group_properties where grp_form_id = 'DEM' AND grp_group_id = 3;
 
 -- Employer
-DELETE FROM layout_options where form_id = 'DEM' AND group_id = 4; 
-DELETE FROM layout_group_properties where grp_form_id = 'DEM' AND grp_group_id = 4;
+-- DELETE FROM layout_options where form_id = 'DEM' AND group_id = 4; 
+-- DELETE FROM layout_group_properties where grp_form_id = 'DEM' AND grp_group_id = 4;
 
 -- Guardian
-DELETE FROM layout_options where form_id = 'DEM' AND group_id = 8;
-DELETE FROM layout_group_properties where grp_form_id = 'DEM' AND grp_group_id = 8;
+-- DELETE FROM layout_options where form_id = 'DEM' AND group_id = 8;
+-- DELETE FROM layout_group_properties where grp_form_id = 'DEM' AND grp_group_id = 8;
+
+---------------------------------------------------------------------------------
+--- LEARNING: Deleting these sections causes an error while creating patients --- 
+---------------------------------------------------------------------------------
 
 
 /* == 2. Hide fields not required in Who Section == */ 
@@ -72,8 +76,6 @@ field_id in (
 	'phone_biz',
 	'email_direct'
 );
-
-
 
 /* == 5. Hide fields fields not required in Stats Section == */ 
 UPDATE layout_options SET UOR =0
